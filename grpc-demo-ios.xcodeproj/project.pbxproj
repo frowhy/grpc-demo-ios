@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B038FFDF0408C17CD512C91A /* Pods_grpc_demo_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80725ABAA740BB29BAA82E3D /* Pods_grpc_demo_ios.framework */; };
+		192B793000B40AF3D85DE5F5 /* libPods-grpc-demo-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DC11FC4BF5E0F04938FDD47 /* libPods-grpc-demo-ios.a */; };
 		B489000926BDCE3299DFE581 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B48909452862EFC1A2ABA410 /* ViewController.m */; };
 		B48900257CDB4286E5ED4FF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B489057F3FAFE1D00FD09870 /* main.m */; };
 		B489013026F8ADCB1523D5E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4890335B2CCBA5FA23C0962 /* AppDelegate.m */; };
@@ -17,9 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DC11FC4BF5E0F04938FDD47 /* libPods-grpc-demo-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-grpc-demo-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9476278B474655114DF3B4 /* Pods-grpc-demo-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grpc-demo-ios.debug.xcconfig"; path = "Target Support Files/Pods-grpc-demo-ios/Pods-grpc-demo-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		4C9EF916F0AEA759BA4298A5 /* Pods-grpc-demo-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grpc-demo-ios.release.xcconfig"; path = "Target Support Files/Pods-grpc-demo-ios/Pods-grpc-demo-ios.release.xcconfig"; sourceTree = "<group>"; };
-		80725ABAA740BB29BAA82E3D /* Pods_grpc_demo_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_grpc_demo_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4890070003A39A72C2C9265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B48901852223C624CBB5971D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B4890335B2CCBA5FA23C0962 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B038FFDF0408C17CD512C91A /* Pods_grpc_demo_ios.framework in Frameworks */,
+				192B793000B40AF3D85DE5F5 /* libPods-grpc-demo-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +47,7 @@
 		373A61234F47AA101BBDC86A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				80725ABAA740BB29BAA82E3D /* Pods_grpc_demo_ios.framework */,
+				0DC11FC4BF5E0F04938FDD47 /* libPods-grpc-demo-ios.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,7 +107,7 @@
 				B4890827CD1815F4ED9AEA1F /* Sources */,
 				B48901DED713D00236BC791A /* Frameworks */,
 				B489099AAF25B5DC844607C3 /* Resources */,
-				6663700C59EF848929A1AA78 /* [CP] Embed Pods Frameworks */,
+				BE7501DFD3F0FB42ACF4402E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,36 +182,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6663700C59EF848929A1AA78 /* [CP] Embed Pods Frameworks */ = {
+		BE7501DFD3F0FB42ACF4402E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-grpc-demo-ios/Pods-grpc-demo-ios-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
-				"${BUILT_PRODUCTS_DIR}/grpc-demo-ios/grpc_demo_ios.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-grpc-demo-ios/Pods-grpc-demo-ios-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC/gRPCCertificates.bundle",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc_demo_ios.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-grpc-demo-ios/Pods-grpc-demo-ios-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-grpc-demo-ios/Pods-grpc-demo-ios-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -259,6 +245,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.frowhy.grpc-demo-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Debug;
 		};
@@ -272,6 +259,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.frowhy.grpc-demo-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Release;
 		};

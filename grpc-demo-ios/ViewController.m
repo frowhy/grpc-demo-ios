@@ -7,9 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "TestA.pbrpc.h"
 #import "GRPCCall+Tests.h"
-#import <Protobuf/GPBMessage.h>
-#import <grpc_demo_ios/grpc-demo-ios-umbrella.h>
 
 static NSString *const kHostAddress = @"localhost:50051";
 
