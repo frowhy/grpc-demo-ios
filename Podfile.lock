@@ -1,0 +1,94 @@
+PODS:
+  - "!ProtoCompiler (3.7.0)":
+    - Protobuf (~> 3.0)
+  - "!ProtoCompiler-gRPCPlugin (1.21.0)":
+    - "!ProtoCompiler (= 3.7.0)"
+    - gRPC-ProtoRPC (= 1.21.0)
+  - BoringSSL-GRPC (0.0.3):
+    - BoringSSL-GRPC/Implementation (= 0.0.3)
+    - BoringSSL-GRPC/Interface (= 0.0.3)
+  - BoringSSL-GRPC/Implementation (0.0.3):
+    - BoringSSL-GRPC/Interface (= 0.0.3)
+  - BoringSSL-GRPC/Interface (0.0.3)
+  - gRPC (1.21.0):
+    - gRPC-RxLibrary (= 1.21.0)
+    - gRPC/Main (= 1.21.0)
+  - gRPC-Core (1.21.0):
+    - gRPC-Core/Implementation (= 1.21.0)
+    - gRPC-Core/Interface (= 1.21.0)
+  - gRPC-Core/Implementation (1.21.0):
+    - BoringSSL-GRPC (= 0.0.3)
+    - gRPC-Core/Interface (= 1.21.0)
+    - nanopb (~> 0.3)
+  - gRPC-Core/Interface (1.21.0)
+  - grpc-demo-ios (0.0.1):
+    - "!ProtoCompiler-gRPCPlugin (~> 1.0)"
+    - grpc-demo-ios/Messages (= 0.0.1)
+    - grpc-demo-ios/Services (= 0.0.1)
+  - grpc-demo-ios/Messages (0.0.1):
+    - "!ProtoCompiler-gRPCPlugin (~> 1.0)"
+    - Protobuf
+  - grpc-demo-ios/Services (0.0.1):
+    - "!ProtoCompiler-gRPCPlugin (~> 1.0)"
+    - grpc-demo-ios/Messages
+    - gRPC-ProtoRPC
+  - gRPC-ProtoRPC (1.21.0):
+    - gRPC-ProtoRPC/Main (= 1.21.0)
+  - gRPC-ProtoRPC/Main (1.21.0):
+    - gRPC (= 1.21.0)
+    - gRPC-RxLibrary (= 1.21.0)
+    - Protobuf (~> 3.0)
+  - gRPC-RxLibrary (1.21.0)
+  - gRPC/Main (1.21.0):
+    - gRPC-Core (= 1.21.0)
+    - gRPC-RxLibrary (= 1.21.0)
+  - nanopb (0.3.901):
+    - nanopb/decode (= 0.3.901)
+    - nanopb/encode (= 0.3.901)
+  - nanopb/decode (0.3.901)
+  - nanopb/encode (0.3.901)
+  - Protobuf (3.8.0)
+
+DEPENDENCIES:
+  - "!ProtoCompiler"
+  - "!ProtoCompiler-gRPCPlugin"
+  - BoringSSL-GRPC
+  - gRPC
+  - gRPC-Core
+  - grpc-demo-ios (from `.`)
+  - gRPC-ProtoRPC
+  - gRPC-RxLibrary
+  - nanopb
+  - Protobuf
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - "!ProtoCompiler"
+    - "!ProtoCompiler-gRPCPlugin"
+    - BoringSSL-GRPC
+    - gRPC
+    - gRPC-Core
+    - gRPC-ProtoRPC
+    - gRPC-RxLibrary
+    - nanopb
+    - Protobuf
+
+EXTERNAL SOURCES:
+  grpc-demo-ios:
+    :path: "."
+
+SPEC CHECKSUMS:
+  "!ProtoCompiler": efc8ba4dceb16b48f6b366a08500871c8d3ff8d2
+  "!ProtoCompiler-gRPCPlugin": 4e7f566ffe5de54bcea666ef15529eba89a1a712
+  BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
+  gRPC: 0fd7e68260fbad66d5153864b75d98ed4d476d97
+  gRPC-Core: c9aef9a261a1247e881b18059b84d597293c9947
+  grpc-demo-ios: 1def327c30589dc6d732076832a641dc0f98416d
+  gRPC-ProtoRPC: fea7d2bb51ddd0ae6b5c5ea27033018f564084d0
+  gRPC-RxLibrary: b0eb67f4f0f4c9cdfa6a73ea2b435a3efa77f1ef
+  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  Protobuf: 3f617b9a6e73605565086864c9bc26b2bf2dd5a3
+
+PODFILE CHECKSUM: 500d38d2b70007cc69ca7a55a049e9091d9fc669
+
+COCOAPODS: 1.7.2

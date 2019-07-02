@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "grpc-demo-ios"
   spec.version      = "0.0.1"
-  spec.summary      = "A short description of grpc-demo-ios."
+  spec.summary      = "GRPC demo ios version."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,10 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+  GRPC demo ios version.
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/grpc-demo-ios"
+  spec.homepage     = "https://github.com/frowhy/grpc-demo-ios"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,7 +39,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
+  spec.license      = "MIT"
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -79,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/grpc-demo-ios.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "git@github.com:frowhy/grpc-demo-proto.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
